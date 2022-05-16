@@ -2,6 +2,50 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 * {box-sizing: border-box}
 
 /* Set height of body and the document to 100% */
@@ -63,6 +107,7 @@ a:hover{
   <a href="https://www.improvememory.org/wp-content/games/swat-vs-zombies/index.html"target = "_blank">3.SWAT VS ZOMBIE</a>
 <a href="https://rawcdn.githack.com/zachanator070/pokemon/0707a304a61b688244a581b5446177e9b1980701/index.html" target = "_blank">4.Pokemon</a>
 <a href="https://script.google.com/a/macros/mcpsmd.net/s/AKfycbya1HhgYEWr4fXKrikh0H9A7VOLVjnCsUzFkYdYrECQBnHA4Q/exec" target ="_blank">5.Slope</a>
+<button class="button" style="vertical-align:middle"><span> Click me </span></button>
 <p>Go to games or tools for more</p>
 </div>
 
@@ -145,4 +190,5 @@ document.getElementById("defaultOpen").click();
    
 </body>
 </html>
+
 
